@@ -1,0 +1,11 @@
+{
+  "name": "fuckk_you",
+  "version": "1.0.0",
+  "description": "\"This will print fuck you whenever you call fuck_you function\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Abhishek Chhabra\"",
+  "license": "ISC"
+}
