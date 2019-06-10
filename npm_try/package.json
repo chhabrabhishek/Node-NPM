@@ -4,13 +4,13 @@
   "description": "Just a trial to implement package.json",
   "main": "index.js",
   "scripts": {
+    "start": "npm i && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fuckk_you": "^1.0.0",
-    "jshint": "^2.10.2",
     "underscore": "^1.9.1"
   }
 }
