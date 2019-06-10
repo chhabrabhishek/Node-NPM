@@ -3,6 +3,8 @@ const promise = getUser(1);
 // promise
 //     .then(user => getUserRepositories(user.githubUsername))
 //     .then(repos => console.log("Repos ",repos));
+
+displayRepos();
 console.log("After");
 
 async function displayRepos(){
@@ -17,14 +19,12 @@ async function displayRepos(){
     }
 }
 
-displayRepos();
-
 function getUser(id){
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log("Reading user from database ...");
             resolve({id : id, githubUsername : "chhabrabhishek"});
-        },2000);
+        },4000);
     })
     return promise;
 }
