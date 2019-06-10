@@ -12,15 +12,21 @@ const trySchema = new mongoose.Schema({
 });
 
 const Try = mongoose.model('Try', trySchema);
-const tries = new Try({
-    name : "Zero to One",
-    author : "Paypal Investor",
-    tags : ['zero', 'one'],
-    isPublished : true
-});
+// const tries = new Try({
+//     name : "Zero to One",
+//     author : "Paypal Investor",
+//     tags : ['zero', 'one'],
+//     isPublished : true
+// });
 
-async function createTry(){
-    const result = await tries.save();
-    console.log(result);
+// async function createTry(){
+//     const result = await tries.save();
+//     console.log(result);
+// }
+
+async function getNovels(){
+    const novels = await Try.find({author : 'Paypal Investor'});
+    console.log(novels);
 }
-createTry();
+getNovels();
+//createTry();
