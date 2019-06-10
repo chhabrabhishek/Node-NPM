@@ -1,10 +1,23 @@
 console.log("Before");
 const promise = getUser(1);
-promise
-    .then(user => getUserRepositories(user.githubUsername))
-    .then(repos => console.log("Repos ",repos))
-    .catch(err => console.log("Error ", err.message));
+// promise
+//     .then(user => getUserRepositories(user.githubUsername))
+//     .then(repos => console.log("Repos ",repos));
 console.log("After");
+
+async function displayRepos(){
+    try{
+        const user = await getUser(1);
+        console.log("User ",user);
+        const repos = await getUserRepositories(user.githubUsername);
+        console.log("Repos ",repos);
+    }
+    catch(err){
+        console.log("Error ", err.message);
+    }
+}
+
+displayRepos();
 
 function getUser(id){
     const promise = new Promise((resolve, reject) => {
