@@ -1,0 +1,18 @@
+{
+  "name": "@chhabrabhishek/scrappy",
+  "version": "1.0.1",
+  "description": "This will scrap the entire internet for you, and shows you a new quote everytime you call scrapIt function.",
+  "main": "quotes.js",
+  "scripts": {
+    "start": "node quotes.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Chhabra",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
