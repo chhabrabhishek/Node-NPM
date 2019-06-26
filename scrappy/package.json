@@ -1,6 +1,6 @@
 {
   "name": "@chhabrabhishek/scrappy",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "This will scrap the entire internet for you, and shows you a new quote everytime you call scrapIt function.",
   "main": "quotes.js",
   "scripts": {

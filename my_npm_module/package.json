@@ -1,6 +1,6 @@
 {
   "name": "fuckk_you",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"This will print fuck you whenever you call fuck_you function\"",
   "main": "index.js",
   "scripts": {
