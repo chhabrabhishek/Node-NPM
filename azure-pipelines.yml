@@ -16,6 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    npm i @chhabrabhishek/scrappy --save
     npm install --save
     npm start
   workingDirectory: 'npm_try'
